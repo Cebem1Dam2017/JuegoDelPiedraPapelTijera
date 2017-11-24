@@ -25,7 +25,6 @@ public class juego {
                 break;
             default:
                 break;
-                
             }
             sc.close();
         }
