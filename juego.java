@@ -6,10 +6,14 @@ public class juego {
             System.out.println("¿Que quieres sacar?");
             System.out.println( "Pulsa 1 para Tijeras");
             System.out.println( "Pulsa 2 para Piedra");
-            System.out.println( "Pulsa 3 para Pepel");
+            System.out.println( "Pulsa 3 para Papel");
             System.out.println( "Pulsa 4 para Salir");
             Scanner sc = new Scanner(System.in);
             sacar = sc.nextInt();
+
+            int aux,resultado;
+            resultado=(int) (Math.random()*3)+1;
+                
             switch(sacar) {
             case 1: 
                 System.out.println("Tijera");
@@ -27,6 +31,9 @@ public class juego {
                 break;
             }
             sc.close();
+
+            }
+            
         }
       }
     
