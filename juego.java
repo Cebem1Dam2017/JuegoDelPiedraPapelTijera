@@ -11,7 +11,7 @@ public class juego {
             Scanner sc = new Scanner(System.in);
             sacar = sc.nextInt();
 
-            int aux,resultado;
+            int resultado;
             resultado=(int) (Math.random()*3)+1;
                 
             switch(sacar) {
