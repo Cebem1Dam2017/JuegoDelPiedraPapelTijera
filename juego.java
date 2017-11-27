@@ -1,8 +1,11 @@
 
+import java.util.Scanner;
+
+
 public class juego {
-    
-        public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         int sacar = 0;
         int idioma = 0;
 
@@ -16,7 +19,6 @@ public class juego {
             case 2:
                 idioma = 2;
         }
-
 
         if (idioma == 1) {
             System.out.println("¿Que quieres sacar?");
@@ -42,34 +44,33 @@ public class juego {
                 default:
                     break;
             }
-            if (idioma == 2) {
-                System.out.println("¿Que quieres sacar?");
-                System.out.println("Pulsa 1 para Tijeras");
-                System.out.println("Pulsa 2 para Piedra");
-                System.out.println("Pulsa 3 para Pepel");
-                System.out.println("Pulsa 4 para Salir");
+        }
+        if (idioma == 2) {
+            System.out.println("¿Que quieres sacar?");
+            System.out.println("Pulsa 1 para Tijeras");
+            System.out.println("Pulsa 2 para Piedra");
+            System.out.println("Pulsa 3 para Pepel");
+            System.out.println("Pulsa 4 para Salir");
 
-                sacar = sc.nextInt();
-                switch (sacar) {
-                    case 1:
-                        System.out.println("Scissors");
-                        break;
-                    case 2:
-                        System.out.println("Stone");
-                        break;
-                    case 3:
-                        System.out.println("Paper");
-                        break;
-                    case 4:
-                        System.out.println("See you soon!");
-                        break;
-                    default:
-                        break;
-                }
-                sc.close();
+            sacar = sc.nextInt();
+            switch (sacar) {
+                case 1:
+                    System.out.println("Scissors");
+                    break;
+                case 2:
+                    System.out.println("Stone");
+                    break;
+                case 3:
+                    System.out.println("Paper");
+                    break;
+                case 4:
+                    System.out.println("See you soon!");
+                    break;
+                default:
+                    break;
             }
+            sc.close();
         }
     }
 }
-    
-    
+}
